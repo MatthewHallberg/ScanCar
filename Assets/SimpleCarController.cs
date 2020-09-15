@@ -11,6 +11,7 @@ public class AxleInfo {
 
 public class SimpleCarController : MonoBehaviour {
 
+    public Transform steeringWheel;
     public List<AxleInfo> axleInfos;
     public float maxMotorTorque;
     public float maxSteeringAngle;
@@ -30,6 +31,7 @@ public class SimpleCarController : MonoBehaviour {
 
         visualWheel.transform.position = position;
         visualWheel.transform.rotation = rotation;
+
     }
 
    void FixedUpdate() {
